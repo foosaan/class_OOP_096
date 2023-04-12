@@ -25,4 +25,4 @@ void Mahasiswa::PrintData() {
 	cout << "\nNilai : " << nilai;
 
 }
-
+class matakuliah
