@@ -26,3 +26,37 @@ void Mahasiswa::PrintData() {
 
 }
 class matakuliah
+{
+private:
+	string kode;
+	string namaMK;
+	int SKS;
+public:
+	void inputMK() {
+		cout << "\n\nMasukkan kode matakuliah : ";
+		cin >> kode;
+		cout << "\nMasukkan nama matakuliah : ";
+		cin >> namaMK;
+		cout << "\nMasukkan SKS : ";
+		cin >> SKS;
+	}
+	void tampil() {
+		cout << "\nData MataKuliah";
+		cout << "\nKode MataKuliah : " << kode;
+		cout << "\nNama MataKulaih : " << namaMK;
+		cout << "\nsks : " << SKS;
+	}
+};
+
+int main()
+{
+	Mahasiswa mhs;
+	matakuliah mk;
+
+	mhs.input();
+	mhs.PrintData();
+
+	mk.inputMK();
+	mk.tampil();
+}
+
